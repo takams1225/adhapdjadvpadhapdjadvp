@@ -70,7 +70,7 @@ function createParticle(x, y) {
     vy: -(0.22 + Math.random() * 0.78),
     drift: (Math.random() - 0.5) * 0.45,
     alpha: 0.3 + Math.random() * 0.7,
-    life: 90 + Math.random() * 130,
+    life: 180 + Math.random() * 180,
     age: Math.random() * 80,
     type: Math.random() > 0.72 ? "star" : "dot",
     spin: Math.random() * Math.PI * 2,
