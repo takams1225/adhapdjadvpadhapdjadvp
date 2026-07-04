@@ -175,7 +175,7 @@ function drawSparkles(time) {
   spawnFromLine();
 
   for (const t of twinkles) {
-    const pulse = 0.35 + 0.65 * Math.sin(time * 0.0018 + t.phase);
+    const pulse = 0.35 + 0.65 * Math.sin(time * 0.0008 + t.phase);
     const alpha = t.alpha * pulse;
 
     if (t.size > 3.4) {
