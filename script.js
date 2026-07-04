@@ -200,7 +200,7 @@ function drawSparkles(time) {
       drawGlowDot(sparkleCtx, p.x, p.y, p.size, alpha);
     }
 
-    if (p.age > p.life || p.y < H * 0.38 || p.x < -30 || p.x > W + 30) {
+    if (p.age > p.life || p.y < -30 || p.x < -30 || p.x > W + 30) {
       Object.assign(p, createParticle(Math.random() * W, H * (0.62 + Math.random() * 0.2)));
     }
   }
