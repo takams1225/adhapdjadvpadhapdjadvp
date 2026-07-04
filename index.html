@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Takahiro & Moka Wedding Countdown</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Serif+JP:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="stage">
+    <div class="photo"></div>
+    <div class="shade"></div>
+
+    <canvas id="sparkles"></canvas>
+
+    <header class="top-title">
+      <div class="eyebrow">WEDDING COUNTDOWN</div>
+      <h1>Takahiro &amp; Moka</h1>
+    </header>
+
+    <section class="countdown">
+      <div class="unit">
+        <div class="number" id="days">--</div>
+        <div class="label">DAYS</div>
+      </div>
+      <div class="bar"></div>
+      <div class="unit">
+        <div class="number" id="hours">--</div>
+        <div class="label">HOURS</div>
+      </div>
+      <div class="bar"></div>
+      <div class="unit">
+        <div class="number" id="minutes">--</div>
+        <div class="label">MINUTES</div>
+      </div>
+      <div class="bar"></div>
+      <div class="unit">
+        <div class="number" id="seconds">--</div>
+        <div class="label">SECONDS</div>
+      </div>
+    </section>
+
+    <canvas id="wave"></canvas>
+
+    <footer class="bottom-info">
+      <div class="date">2026.8.8</div>
+      <div class="ornament"><span></span><i>✦</i><span></span></div>
+      <div class="venue">心斎橋セントグレースヴィラ</div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
