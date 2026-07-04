@@ -191,7 +191,8 @@ function drawSparkles(time) {
     p.y += p.vy;
     p.spin += 0.025;
 
-    const fade = Math.max(0, 1 - p.age / p.life);
+    const progress = p.age / p.life;
+    const fade = Math.pow(Math.max(0, 1 - progress), 2);
     const alpha = p.alpha * fade;
 
     if (p.type === "star") {
